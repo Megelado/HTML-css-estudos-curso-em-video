@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+ <h1>Mangás</h1>
+ <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+      <label for="imanga">Gênero favorito e seu Manga favorito</label>
+    </p>
+    <p>
+    <select name="manga" id="imanga">
+    <option value="" selected>--Escolha--</option>
+    <optgroup label="shounen">
+     <option value="BC">Black Clover</option>
+     <option value="DB">Dragom Ball</option>
+     <option value="FT">Fairy Tail</option>
+     <option value="G">Gintama</option>
+    </optgroup>
+    <optgroup label="Seinen">
+      <option value="BS">Berserker</option>
+      <option value="GZ">Gantz</option>
+      <option value="OP">Oyasumi Punpun</option>
+      <option value="TF">Terraformars</option>
+    </optgroup>
+  </select>
+  </p>
+  <p>
+      <label for="imangaka">Mangaká Favorito</label>
+  <input type="text" id="imangaka" name="mangaka" list="lstmangaka">
+  <datalist id="lstmangaka">
+    <option value="tabata">Yuki Tabata</option>
+    <option value="Oda">Eichiro Oda</option>
+    <option value="Togashi">Yoshihiro Togashi</option>
+    <option value="Shinobu">Shinobu Ohtaka</option>
+  </datalist>
+  </p>
+
+  <br>
+  <p>
+      <label for="itexto">Escreva o que gosta na arte ou na escrita ou tudo dele: </label><br>
+      <textarea cols="30" rows="10"></textarea name="texto" id="itexto">
+  </p>
+
+  <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+ </form>
+
+</body>
+</html>
