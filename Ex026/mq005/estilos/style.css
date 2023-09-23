@@ -42,7 +42,7 @@ menu > ul {
     list-style-type: none;
 }
 
-menu a {
+menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -52,7 +52,7 @@ menu a {
     border-top: 2px solid gray;
 }
 
-menu a:hover {
+menu > ul > li > a:hover {
     background-color: gray;
 }
 
@@ -60,6 +60,7 @@ main {
     width: 90vw;
     background-color: white;
     margin: auto;
+    margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
 }
