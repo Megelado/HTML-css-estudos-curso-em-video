@@ -6,8 +6,9 @@
     <title>Media Queries</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-querie.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -27,9 +28,20 @@
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veniam assumenda voluptates eos id qui molestias eius magnam, in ratione aut, numquam alias, eaque eveniet! Incidunt voluptatum similique molestias aliquid.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sed a odit nihil dolores. Iusto explicabo accusamus nulla quaerat architecto quia delectus magnam! Blanditiis unde sint, nulla illum maxime dolore?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vero ipsa id temporibus ducimus repellendus in eveniet officiis amet numquam aperiam dicta pariatur nisi tempore maxime harum culpa velit quod!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quod necessitatibus. Laborum voluptatibus omnis quibusdam laboriosam officiis ad amet corrupti quae libero impedit adipisci quas ut facilis animi, eos laudantium!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet possimus aut voluptatum modi inventore nulla reprehenderit tenetur, quia sint debitis asperiores totam quis officiis, quod ab ipsa harum. Aliquid, cumque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam ipsam eligendi optio animi atque a, quam dolorum unde dignissimos dolor debitis labore laudantium? Laboriosam doloribus maxime perspiciatis. Cupiditate, harum!</p>
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if(window.innerWidth >= 768) {
+                items.style.display = 'block'
+            } else {
+                items.style.display = 'none'
+            }
+        }
         function clickMenu() {
             if (items.style.display == 'block') {
                 items.style.display = 'none'
